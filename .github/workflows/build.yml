@@ -24,8 +24,7 @@ jobs:
           unzip -q RetailMartAndroid_v1_5_complete.zip -d project
           PROJECT_DIR=$(find project -type f -name settings.gradle.kts -printf '%h\n' | head -1)
           echo "PROJECT_DIR=$PROJECT_DIR" >> "$GITHUB_ENV"
-                  - name: Setup Android SDK
-          run: echo "Android SDK setup"
+                  
 
       - name: Install Android SDK 35
         run: |
